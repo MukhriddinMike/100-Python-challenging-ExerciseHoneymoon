@@ -9,10 +9,19 @@ Then, the output should be:
 /
 /
 '''
-
+N = 8
+m = 1
 for i in range(1,N+1):
     m=m*i
 print(m)
 # I will be back and will make it easier
 # map,list comp, lambda etc.
+# or
 
+def fact(x):
+    if x == 0:
+        return 1
+    return x * fact(x - 1)
+
+x=int(input())
+print(fact(x))
